@@ -22,7 +22,6 @@ jobs:
       # Runs a single command using the runners shell
       - run: |
           docker run \
-          -it \
           --rm \
           -v $(pwd):/openscad \
           -u $(id -u ${USER}):$(id -g ${USER}) \
